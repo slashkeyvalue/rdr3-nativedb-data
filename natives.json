@@ -102799,66 +102799,66 @@
 		},
 		"0x5E5D96BE25E9DF68": {
 			"name": "_0x5E5D96BE25E9DF68",
-			"comment": "",
+			"comment": "Returns true when the composite you requested is loaded?",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "compositeHash"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "BOOL",
 			"build": "1207"
 		},
 		"0x5B4BBE80AD5972DC": {
-			"name": "_0x5B4BBE80AD5972DC",
-			"comment": "",
+			"name": "_CREATE_COMPOSITE",
+			"comment": "p5: 0 -> Composite automatically snaps to the ground\n2 -> Composite doesnt snap to the ground",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Hash",
+					"name": "compositeHash"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "float",
+					"name": "posX"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "float",
+					"name": "posY"
 				},
 				{
-					"type": "Any",
-					"name": "p3"
+					"type": "float",
+					"name": "posZ"
 				},
 				{
-					"type": "Any",
-					"name": "p4"
+					"type": "float",
+					"name": "heading"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p5"
 				},
 				{
-					"type": "Any",
+					"type": "Any*",
 					"name": "p6"
 				},
 				{
-					"type": "Any",
+					"type": "int",
 					"name": "p7"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0x5758B1EE0C3FD4AC": {
-			"name": "_0x5758B1EE0C3FD4AC",
+			"name": "_DELETE_SCENARIO_COMPOSITE",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "composite"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p1"
 				}
 			],
@@ -102866,19 +102866,19 @@
 			"build": "1207"
 		},
 		"0x96C6ED22FB742C3E": {
-			"name": "_0x96C6ED22FB742C3E",
+			"name": "_GET_COMPOSITE_ENTITIES",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "int",
+					"name": "composite"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Any*",
+					"name": "outEntities"
 				}
 			],
-			"return_type": "Any",
+			"return_type": "int",
 			"build": "1207"
 		},
 		"0xDF56A2B50C04DEA4": {
@@ -103838,23 +103838,23 @@
 			"build": "1207"
 		},
 		"0x9B0C7FA063E67629": {
-			"name": "_0x9B0C7FA063E67629",
+			"name": "_SET_FISHINGROD_BAIT_FOR_PED",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "char*",
+					"name": "baitModel"
 				},
 				{
-					"type": "Any",
-					"name": "p2"
+					"type": "BOOL",
+					"name": "noBobber"
 				},
 				{
-					"type": "Any",
+					"type": "BOOL",
 					"name": "p3"
 				}
 			],
@@ -103874,16 +103874,16 @@
 			"build": "1207"
 		},
 		"0x1A52076D26E09004": {
-			"name": "_0x1A52076D26E09004",
+			"name": "_PED_FISHINGROD_HOOK_ENTITY",
 			"comment": "",
 			"params": [
 				{
-					"type": "Any",
-					"name": "p0"
+					"type": "Ped",
+					"name": "ped"
 				},
 				{
-					"type": "Any",
-					"name": "p1"
+					"type": "Entity",
+					"name": "entity"
 				}
 			],
 			"return_type": "void",
